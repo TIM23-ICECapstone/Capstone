@@ -1,4 +1,0 @@
-repository "CAPSTONE 23@farismiqdad01@cloud"
-  path "/"
-    br "/main"
-    co "/main"

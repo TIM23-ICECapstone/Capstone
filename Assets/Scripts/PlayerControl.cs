@@ -55,7 +55,7 @@ public class PlayerControl : MonoBehaviour
         {
             sr.flipX = direction.x < 0;
         }
-        anim.SetBool("run", direction.x != 0);
+        anim.SetBool("walk", direction.x != 0);
         rb.velocity = new Vector2(direction.x * speed, rb.velocity.y);
     }
     private bool IsGrounded()
@@ -70,6 +70,19 @@ public class PlayerControl : MonoBehaviour
         onJump = !IsGrounded();
         if (direction.y > 0.2)
             rb.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+        anim.SetBool("jump", onJump);
+        return;
     }
-
+    public void Punch()
+    {
+        anim.Play("punch");
+    }
+    public void Kick()
+    {
+        anim.Play("kick");
+    }
+    public void Defend()
+    {
+        anim.Play("defend");
+    }
 }
