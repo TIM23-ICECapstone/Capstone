@@ -10,11 +10,14 @@ public class MainMenuManager : MonoBehaviour
     public GameObject panelCharacterMenu;
     public GameObject panelHowToPlayMenu;
     public GameObject panelConfirmNCMenu;
+    public GameObject panelConfirmQuit;
 
     [Header("Setting Menu")]
     public GameObject checkBoxSound;
     public GameObject checkBoxVibration;
     public GameObject checkBoxReverse;
+    public GameObject panelConfirmSetDefault;
+    
     bool isSoundOn;
     bool isVibrationOn;
     bool isReverseOn;
@@ -29,6 +32,7 @@ public class MainMenuManager : MonoBehaviour
         panelStartMenu.SetActive(true);
         panelSettingMenu.SetActive(false);
         panelCharacterMenu.SetActive(false);
+        panelHowToPlayMenu.SetActive(false);
     }
 
     public void SettingButton(){
@@ -36,6 +40,7 @@ public class MainMenuManager : MonoBehaviour
         panelStartMenu.SetActive(false);
         panelSettingMenu.SetActive(true);
         panelCharacterMenu.SetActive(false);
+        panelHowToPlayMenu.SetActive(false);
     }
 
     public void CharacterButton(){
@@ -43,6 +48,7 @@ public class MainMenuManager : MonoBehaviour
         panelStartMenu.SetActive(false);
         panelSettingMenu.SetActive(false);
         panelCharacterMenu.SetActive(true);
+        panelHowToPlayMenu.SetActive(false);
     }
 
     public void BackButton(){
@@ -50,9 +56,10 @@ public class MainMenuManager : MonoBehaviour
         panelStartMenu.SetActive(false);
         panelSettingMenu.SetActive(false);
         panelCharacterMenu.SetActive(false);
+        panelHowToPlayMenu.SetActive(false);
     }
 
-    public void SoundButton(){
+    public void SoundButton(){ 
         if(isSoundOn){
             checkBoxSound.SetActive(false);
             isSoundOn = false;
@@ -85,6 +92,20 @@ public class MainMenuManager : MonoBehaviour
         }
     }
 
+    public void ShowConfirmSetDefault(){
+        panelConfirmSetDefault.SetActive(true);
+    }
+    public void DisableConfirmSetDefault(){
+        panelConfirmSetDefault.SetActive(false);
+    }
+
+    public void ShowConfirmQuit(){
+        panelConfirmQuit.SetActive(true);
+    }
+    public void DisableConfirmQuit(){
+        panelConfirmQuit.SetActive(false);
+    }
+
     public void QuitButton(){
         Application.Quit();
     }
@@ -97,7 +118,13 @@ public class MainMenuManager : MonoBehaviour
         panelHowToPlayMenu.SetActive(true);
     }
 
-
+    public void showHTPPanel(){
+        panelMainMenu.SetActive(false);
+        panelStartMenu.SetActive(false);
+        panelSettingMenu.SetActive(false);
+        panelCharacterMenu.SetActive(false);
+        panelHowToPlayMenu.SetActive(true);
+    }
 
     // Update is called once per frame
     void Update()

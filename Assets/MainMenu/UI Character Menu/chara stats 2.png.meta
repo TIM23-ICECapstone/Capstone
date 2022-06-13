@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 95adab1345c71704aad3a0c434de9cf1
+guid: fecabf8778817014fad5aa10f98de7bc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -38,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 0
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -62,14 +62,14 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -81,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -105,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 6_0
+      name: chara stats 2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 466
-        width: 483
-        height: 93
+        y: 699
+        width: 647
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d278ebd5e7583454bb137281696c7d1f
-      internalID: 1716178982
+      spriteID: c1ea89e4c698ff44d9af4224001cca06
+      internalID: 1044323449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6_1
+      name: chara stats 2_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 341
-        width: 483
-        height: 93
+        x: 734
+        y: 776
+        width: 294
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99c7a749fc17640498d35797569c9368
-      internalID: -745179158
+      spriteID: 3a682a184996b574f88de030f5bd7ce5
+      internalID: 800928391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6_2
+      name: chara stats 2_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 216
-        width: 483
-        height: 93
+        x: 1668
+        y: 698
+        width: 130
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b45c87903e9121b49aa473b2273b4f2a
-      internalID: 1873694691
+      spriteID: b549fc65b43191d4f8925238c8143551
+      internalID: -1989891517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 6_3
+      name: chara stats 2_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 91
-        width: 483
-        height: 92
+        x: 156
+        y: 255
+        width: 415
+        height: 409
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87f9fbf00517bd0478aa3b78a7600e1a
-      internalID: -1715903591
+      spriteID: 62adebb30a478d2489be461331ec4585
+      internalID: 290285445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chara stats 2_4
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 539
+        width: 107
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4abe6827069844eb2d0177f7b916a7
+      internalID: 320804141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chara stats 2_5
+      rect:
+        serializedVersion: 2
+        x: 1526
+        y: 539
+        width: 106
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db42abf2613bf714aae5a4241945988a
+      internalID: 734957764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chara stats 2_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 183
+        width: 150
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6737af1f6de3c934eb89190f1ebd701d
+      internalID: 828889311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chara stats 2_7
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 179
+        width: 162
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982a3663c202fb54fa12a6c0a303392e
+      internalID: 151151768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chara stats 2_8
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 162
+        width: 374
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab23dbe356212a4b9ea445133547f67
+      internalID: 2122399622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chara stats 2_9
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 117
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e54666e06a5624b9759d41ab0fd2c9
+      internalID: -1335125415
       vertices: []
       indices: 
       edges: []
@@ -202,7 +328,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1916ba1ed89d37a49bfc4f83713bc387
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +336,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      6_1: -745179158
-      6_3: -1715903591
-      6_0: 1716178982
-      6_2: 1873694691
+      chara stats 2_2: -1989891517
+      chara stats 2_9: -1335125415
+      chara stats 2_5: 734957764
+      chara stats 2_6: 828889311
+      chara stats 2_0: 1044323449
+      chara stats 2_4: 320804141
+      chara stats 2_7: 151151768
+      chara stats 2_8: 2122399622
+      chara stats 2_1: 800928391
+      chara stats 2_3: 290285445
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
