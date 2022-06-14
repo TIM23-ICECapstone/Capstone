@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class MainMenuManager : MonoBehaviour
     public GameObject checkBoxVibration;
     public GameObject checkBoxReverse;
     public GameObject panelConfirmSetDefault;
+
+    [Header("Character Menu")]
+    public GameObject character1;
+    public GameObject character2;
+    int characterStatus = 0;
     
     bool isSoundOn;
     bool isVibrationOn;
@@ -119,11 +125,29 @@ public class MainMenuManager : MonoBehaviour
     }
 
     public void showHTPPanel(){
-        panelMainMenu.SetActive(false);
-        panelStartMenu.SetActive(false);
-        panelSettingMenu.SetActive(false);
-        panelCharacterMenu.SetActive(false);
-        panelHowToPlayMenu.SetActive(true);
+        if(!panelHowToPlayMenu.activeInHierarchy){
+            panelHowToPlayMenu.SetActive(true);
+        }
+        else{
+            panelHowToPlayMenu.SetActive(false);
+        } 
+    }
+
+    public void NextCharacter(){
+        if(characterStatus == 0){
+            character1.SetActive(false);
+            character2.SetActive(true);
+            characterStatus = 1;
+        }
+        else if(characterStatus == 1){
+            character2.SetActive(false);
+            character1.SetActive(true);
+            characterStatus = 0;
+        }
+    }
+
+    public void LoadScene(){
+        SceneManager.LoadScene("Game");
     }
 
     // Update is called once per frame
