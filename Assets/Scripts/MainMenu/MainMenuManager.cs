@@ -66,7 +66,9 @@ public class MainMenuManager : MonoBehaviour
     }
 
     public void SoundButton(){ 
-        if(isSoundOn){
+        AudioManager.Instance.MuteSound();
+        if(AudioManager.Instance.BGM.mute == true){
+
             checkBoxSound.SetActive(false);
             isSoundOn = false;
         }
