@@ -6,8 +6,12 @@ using UnityEngine;
 public class Enemy : ScriptableObject
 {
     public string enemyName;
+    public int enemyLife;
     public Sprite enemySprite;
+    [Range(0, 100)]
     public int enemyHealth;
+    [Range(0, 100)]
+    public int enemyEnergy;
     public int enemyDamage;
     public RuntimeAnimatorController enemyanimator;
     public AnimationClip idle;

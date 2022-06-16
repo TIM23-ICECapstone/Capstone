@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/44.png.meta
 guid: 595b9caf8c3fc814dbc12fe8d8b4c883
-=======
-guid: 0e99114c49b841a49a5b52646925789c
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat kick sprite.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -37,12 +33,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -52,7 +48,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 3155, y: 0, z: 2609, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -66,7 +62,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -85,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,15 +128,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< HEAD:Assets/44.png.meta
-      name: 44_0
-      rect:
-        serializedVersion: 2
-        x: 2783
-        y: 273
-        width: 8486
-        height: 5879
-=======
       name: silat kick sprite_0
       rect:
         serializedVersion: 2
@@ -148,7 +135,6 @@ TextureImporter:
         y: 0
         width: 384
         height: 1080
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat kick sprite.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,12 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Assets/44.png.meta
-      spriteID: a4098f65bb6f08140ab3222c49bde019
-      internalID: 1309655125
-=======
-      spriteID: 741504fcf7fdb1543b8bb5a61d06da48
-      internalID: -301376214
+      spriteID: 2050a103ba7514e4a89e7664f9252d2d
+      internalID: -899904108
       vertices: []
       indices: 
       edges: []
@@ -181,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68d1c8d67afeec14689f34d63a5e7b74
-      internalID: 28766484
+      spriteID: 3e00597fe6df9b545ad23110345e4542
+      internalID: 714116851
       vertices: []
       indices: 
       edges: []
@@ -202,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62e578480a99a19459fe722d9597f637
-      internalID: 1010678494
+      spriteID: 8cf117974194a174eba66dee3e36ac5d
+      internalID: -1809171223
       vertices: []
       indices: 
       edges: []
@@ -223,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f39eefc477986fe4e9830d80ec97a0b0
-      internalID: 2088226732
+      spriteID: f79a2e88e3364dc4bb3286323198b91c
+      internalID: 1402540601
       vertices: []
       indices: 
       edges: []
@@ -244,9 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b631a24741a589d4cab6eb61dc568023
-      internalID: 1857723962
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat kick sprite.png.meta
+      spriteID: 7e3871c227d2b6449b435749e1aa1617
+      internalID: -298053630
       vertices: []
       indices: 
       edges: []
@@ -255,25 +236,18 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< HEAD:Assets/44.png.meta
-      44_1: -2069907832
-      44_3: 1599624262
-      44_0: 1309655125
-      44_2: -1124631151
-=======
-      silat kick sprite_4: 1857723962
-      silat kick sprite_3: 2088226732
-      silat kick sprite_1: 28766484
-      silat kick sprite_0: -301376214
-      silat kick sprite_2: 1010678494
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat kick sprite.png.meta
+      silat kick sprite_4: -298053630
+      silat kick sprite_3: 1402540601
+      silat kick sprite_1: 714116851
+      silat kick sprite_0: -899904108
+      silat kick sprite_2: -1809171223
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
