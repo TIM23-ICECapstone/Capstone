@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Player;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -12,6 +13,15 @@ public class PlayerControl : MonoBehaviour
     Animator anim;
     bool onJump = false;
     Vector2 direction;
+    int life = 3;
+    [SerializeField] TMPro.TextMeshProUGUI lifeText;
+    [SerializeField] GameObject defeatPanel;
+    [SerializeField] Slider healthBar;
+    float maxHP = 100;
+    float currentHP;
+    int energy = 100;
+    float currentEnergy;
+    [SerializeField] Slider energyBar;
     [SerializeField] float speed = 5f;
     private void Awake()
     {
@@ -32,6 +42,12 @@ public class PlayerControl : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         col = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
+        currentHP = maxHP;
+        healthBar.maxValue = maxHP;
+        energyBar.maxValue = energy;
+        currentEnergy = energy;
+        lifeText.text = life.ToString();
+
         input.Player.Move.performed += ctx => direction = ctx.ReadValue<Vector2>();
         input.Player.Move.canceled += ctx => direction = Vector2.zero;
     }
@@ -40,6 +56,37 @@ public class PlayerControl : MonoBehaviour
     void Update()
     {
         Move();
+        if (currentEnergy < 100)
+        {
+            currentEnergy += 10f * Time.deltaTime;
+            energyBar.value = currentEnergy;
+        }
+        if (currentHP < 100)
+        {
+            currentHP += 1f * Time.deltaTime;
+            healthBar.value = currentHP;
+        }
+        if (currentHP <= 0)
+        {
+            life--;
+            lifeText.text = life.ToString();
+            currentHP = maxHP;
+            healthBar.value = currentHP;
+        }
+        if (life <= 0)
+        {
+            defeatPanel.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "EnemyHitBox")
+        {
+            currentHP -= 10;
+            healthBar.value = currentHP;
+            rb.AddForce(Vector2.left * 10);
+        }
     }
     private void FixedUpdate()
     {
@@ -51,10 +98,10 @@ public class PlayerControl : MonoBehaviour
         {
             return;
         }
-        if (direction.x != 0)
-        {
-            sr.flipX = direction.x < 0;
-        }
+        // if (direction.x != 0)
+        // {
+        //     sr.flipX = direction.x < 0;
+        // }
         anim.SetBool("walk", direction.x != 0);
         rb.velocity = new Vector2(direction.x * speed, rb.velocity.y);
     }
@@ -75,11 +122,21 @@ public class PlayerControl : MonoBehaviour
     }
     public void Punch()
     {
-        anim.Play("punch");
+        if (currentEnergy > 10)
+        {
+            anim.Play("punch");
+            currentEnergy -= 10;
+            energyBar.value = currentEnergy;
+        }
     }
     public void Kick()
     {
-        anim.Play("kick");
+        if (currentEnergy > 20)
+        {
+            anim.Play("kick");
+            currentEnergy -= 20;
+            energyBar.value = currentEnergy;
+        }
     }
     public void Defend()
     {

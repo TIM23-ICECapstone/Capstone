@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
 guid: f974b266a5e1d0544aee32b3cf369dcb
-=======
-guid: ead291c94fd747641925cdd6139ea7c7
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +38,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -66,14 +62,14 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,41 +105,29 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
-=======
   - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
-      name: 6_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 466
-        width: 483
-        height: 93
-=======
       name: silat jump sprite_0
       rect:
         serializedVersion: 2
@@ -151,7 +135,6 @@ TextureImporter:
         y: 0
         width: 384
         height: 1080
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,27 +142,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
-      spriteID: f907a023c51a30f47952b8dd598c790d
-      internalID: 225870353
-=======
-      spriteID: 90d8b8535da05a442be4974022696f3f
-      internalID: -1221565240
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
+      spriteID: 1adbfa67c5f89384cb1cf2938975953b
+      internalID: 441365269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
-      name: 6_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 341
-        width: 483
-        height: 93
-=======
       name: silat jump sprite_1
       rect:
         serializedVersion: 2
@@ -187,7 +156,6 @@ TextureImporter:
         y: 0
         width: 384
         height: 1080
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,27 +163,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
-      spriteID: 5ecae3a2e7367754cb5cf95dc7169e99
-      internalID: -737761825
-=======
-      spriteID: cc8aeb2c7949ee14ebe68e0143807f0f
-      internalID: 388074249
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
+      spriteID: 3823bc8a46387be40a22266e973b6ef6
+      internalID: -1420125598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
-      name: 6_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 216
-        width: 483
-        height: 93
-=======
       name: silat jump sprite_2
       rect:
         serializedVersion: 2
@@ -223,7 +177,6 @@ TextureImporter:
         y: 0
         width: 384
         height: 1080
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,27 +184,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
-      spriteID: e6731b497c799654d874b36cb1575ce4
-      internalID: -792461877
-=======
-      spriteID: 82f225b7c8e1f094fabd1d553143197d
-      internalID: -1671411252
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
+      spriteID: 4e3711af84be738418c1d0f4629d1d96
+      internalID: -1751644817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
-      name: 6_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 91
-        width: 483
-        height: 92
-=======
       name: silat jump sprite_3
       rect:
         serializedVersion: 2
@@ -266,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f192bde681d2ac14196d85560646177c
-      internalID: -10593178
+      spriteID: 4042ad03cec873f4f89f71338407dbec
+      internalID: 377420227
       vertices: []
       indices: 
       edges: []
@@ -280,7 +219,6 @@ TextureImporter:
         y: 0
         width: 384
         height: 1080
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,13 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
-      spriteID: 7e8907dd3194a2741b585e1523b224be
-      internalID: 1318384087
-=======
-      spriteID: fe8e3b096fb2fd1499ff24036816553d
-      internalID: 1237771054
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
+      spriteID: 05c5d6e8cd146b64ab65da7fb19a2ac6
+      internalID: 720950965
       vertices: []
       indices: 
       edges: []
@@ -310,18 +243,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< HEAD:Assets/MainMenu/UI Menu Utama/6.png.meta
-      6_1: -737761825
-      6_3: 1318384087
-      6_0: 225870353
-      6_2: -792461877
-=======
-      silat jump sprite_2: -1671411252
-      silat jump sprite_4: 1237771054
-      silat jump sprite_0: -1221565240
-      silat jump sprite_3: -10593178
-      silat jump sprite_1: 388074249
->>>>>>> origin/development:Assets/Assets/Sprites/Player/silat jump sprite.png.meta
+      silat jump sprite_2: -1751644817
+      silat jump sprite_4: 720950965
+      silat jump sprite_0: 441365269
+      silat jump sprite_3: 377420227
+      silat jump sprite_1: -1420125598
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
