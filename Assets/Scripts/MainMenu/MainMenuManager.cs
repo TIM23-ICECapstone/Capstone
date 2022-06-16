@@ -23,17 +23,18 @@ public class MainMenuManager : MonoBehaviour
     public GameObject character1;
     public GameObject character2;
     int characterStatus = 0;
-    
+
     bool isSoundOn;
     bool isVibrationOn;
     bool isReverseOn;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    public void StartButton(){
+    public void StartButton()
+    {
         panelMainMenu.SetActive(false);
         panelStartMenu.SetActive(true);
         panelSettingMenu.SetActive(false);
@@ -41,7 +42,8 @@ public class MainMenuManager : MonoBehaviour
         panelHowToPlayMenu.SetActive(false);
     }
 
-    public void SettingButton(){
+    public void SettingButton()
+    {
         panelMainMenu.SetActive(false);
         panelStartMenu.SetActive(false);
         panelSettingMenu.SetActive(true);
@@ -49,7 +51,8 @@ public class MainMenuManager : MonoBehaviour
         panelHowToPlayMenu.SetActive(false);
     }
 
-    public void CharacterButton(){
+    public void CharacterButton()
+    {
         panelMainMenu.SetActive(false);
         panelStartMenu.SetActive(false);
         panelSettingMenu.SetActive(false);
@@ -57,7 +60,8 @@ public class MainMenuManager : MonoBehaviour
         panelHowToPlayMenu.SetActive(false);
     }
 
-    public void BackButton(){
+    public void BackButton()
+    {
         panelMainMenu.SetActive(true);
         panelStartMenu.SetActive(false);
         panelSettingMenu.SetActive(false);
@@ -65,60 +69,75 @@ public class MainMenuManager : MonoBehaviour
         panelHowToPlayMenu.SetActive(false);
     }
 
-    public void SoundButton(){ 
+    public void SoundButton()
+    {
         AudioManager.Instance.MuteSound();
-        if(AudioManager.Instance.BGM.mute == true){
+        if (AudioManager.Instance.BGM.mute == true)
+        {
 
             checkBoxSound.SetActive(false);
             isSoundOn = false;
         }
-        else{
+        else
+        {
             checkBoxSound.SetActive(true);
             isSoundOn = true;
         }
     }
 
-    public void VibrationButton(){
-        if(isVibrationOn){
+    public void VibrationButton()
+    {
+        if (isVibrationOn)
+        {
             checkBoxVibration.SetActive(false);
             isVibrationOn = false;
         }
-        else{
+        else
+        {
             checkBoxVibration.SetActive(true);
             isVibrationOn = true;
         }
     }
 
-    public void ReverseButton(){
-        if(isReverseOn){
+    public void ReverseButton()
+    {
+        if (isReverseOn)
+        {
             checkBoxReverse.SetActive(false);
             isReverseOn = false;
         }
-        else{
+        else
+        {
             checkBoxReverse.SetActive(true);
             isReverseOn = true;
         }
     }
 
-    public void ShowConfirmSetDefault(){
+    public void ShowConfirmSetDefault()
+    {
         panelConfirmSetDefault.SetActive(true);
     }
-    public void DisableConfirmSetDefault(){
+    public void DisableConfirmSetDefault()
+    {
         panelConfirmSetDefault.SetActive(false);
     }
 
-    public void ShowConfirmQuit(){
+    public void ShowConfirmQuit()
+    {
         panelConfirmQuit.SetActive(true);
     }
-    public void DisableConfirmQuit(){
+    public void DisableConfirmQuit()
+    {
         panelConfirmQuit.SetActive(false);
     }
 
-    public void QuitButton(){
+    public void QuitButton()
+    {
         Application.Quit();
     }
 
-    public void confirmNewCampaign(){
+    public void confirmNewCampaign()
+    {
         panelMainMenu.SetActive(false);
         panelStartMenu.SetActive(false);
         panelSettingMenu.SetActive(false);
@@ -126,35 +145,42 @@ public class MainMenuManager : MonoBehaviour
         panelHowToPlayMenu.SetActive(true);
     }
 
-    public void showHTPPanel(){
-        if(!panelHowToPlayMenu.activeInHierarchy){
+    public void showHTPPanel()
+    {
+        if (!panelHowToPlayMenu.activeInHierarchy)
+        {
             panelHowToPlayMenu.SetActive(true);
         }
-        else{
+        else
+        {
             panelHowToPlayMenu.SetActive(false);
-        } 
+        }
     }
 
-    public void NextCharacter(){
-        if(characterStatus == 0){
+    public void NextCharacter()
+    {
+        if (characterStatus == 0)
+        {
             character1.SetActive(false);
             character2.SetActive(true);
             characterStatus = 1;
         }
-        else if(characterStatus == 1){
+        else if (characterStatus == 1)
+        {
             character2.SetActive(false);
             character1.SetActive(true);
             characterStatus = 0;
         }
     }
 
-    public void LoadScene(){
-        SceneManager.LoadScene("Game");
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

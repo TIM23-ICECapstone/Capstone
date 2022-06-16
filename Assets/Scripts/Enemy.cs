@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy : ScriptableObject
 {
     public string enemyName;
+    [Range(0, 100)]
     public int enemyLife;
     public Sprite enemySprite;
     [Range(0, 100)]

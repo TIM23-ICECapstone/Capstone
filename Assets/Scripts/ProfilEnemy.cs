@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ProfilEnemy : MonoBehaviour
@@ -14,6 +15,7 @@ public class ProfilEnemy : MonoBehaviour
     [SerializeField] Slider energyBar;
     [SerializeField] GameObject HitBox;
     [SerializeField] GameObject victoryPanel;
+    int life;
 
 
     private float currentHP;
@@ -21,8 +23,8 @@ public class ProfilEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemy.enemyLife = 3;
-        lifeText.text = enemy.enemyLife.ToString();
+        life = enemy.enemyLife;
+        lifeText.text = life.ToString();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         spriteRenderer.sprite = enemy.enemySprite;
@@ -54,12 +56,12 @@ public class ProfilEnemy : MonoBehaviour
         }
         if (currentHP <= 0)
         {
-            enemy.enemyLife--;
+            life--;
             currentHP = enemy.enemyHealth;
             healthBar.value = currentHP;
-            lifeText.text = enemy.enemyLife.ToString();
+            lifeText.text = life.ToString();
         }
-        if (enemy.enemyLife == 0)
+        if (life == 0)
         {
             victoryPanel.SetActive(true);
             Time.timeScale = 0;
