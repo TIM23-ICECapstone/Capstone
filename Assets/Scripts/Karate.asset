@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Karate
   m_EditorClassIdentifier: 
   enemyName: Karate
-  enemyLife: 1
+  enemyLife: 4
   enemySprite: {fileID: -1063728515, guid: 51a41847bfa621c48a2a7b3fe275f282, type: 3}
   enemyHealth: 100
   enemyEnergy: 100

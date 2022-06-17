@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf44b3625ffc6274e879682770934b83, type: 3}
+  m_Name: Karate Hard
+  m_EditorClassIdentifier: 
+  enemyName: Karate
+  enemyLife: 6
+  enemySprite: {fileID: -1063728515, guid: 51a41847bfa621c48a2a7b3fe275f282, type: 3}
+  enemyHealth: 100
+  enemyEnergy: 100
+  enemyDamage: 30
+  enemyanimator: {fileID: 9100000, guid: 98a17c9361ba9f94e899d24b89afc0ae, type: 2}
+  idle: {fileID: 7400000, guid: ef10abddc303f2d45bf05d7b68b85265, type: 2}
+  punch: {fileID: 7400000, guid: 1ee044114cc9a6444bcea1fa1b0ff86a, type: 2}
+  kick: {fileID: 7400000, guid: 250225848e471634086722ff0fd27977, type: 2}
+  walk: {fileID: 7400000, guid: 8a0e6be0d9923f84d9de7714e2a05bd5, type: 2}
+  die: {fileID: 0}
+  victory: {fileID: 0}

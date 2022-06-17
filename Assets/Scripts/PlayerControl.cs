@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Player;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
@@ -22,6 +23,7 @@ public class PlayerControl : MonoBehaviour
     int energy = 100;
     float currentEnergy;
     [SerializeField] Slider energyBar;
+    bool hitAble = true;
     [SerializeField] float speed = 5f;
     private void Awake()
     {
@@ -38,6 +40,7 @@ public class PlayerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale=1;
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         col = GetComponent<Collider2D>();
@@ -77,15 +80,19 @@ public class PlayerControl : MonoBehaviour
         {
             defeatPanel.SetActive(true);
             Time.timeScale = 0;
+            Invoke("GoToMenu", 3);
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "EnemyHitBox")
         {
-            currentHP -= 10;
-            healthBar.value = currentHP;
-            rb.AddForce(Vector2.left * 10);
+            if (hitAble == true)
+            {
+                currentHP -= 10;
+                healthBar.value = currentHP;
+                rb.AddForce(Vector2.left * 10);
+            }
         }
     }
     private void FixedUpdate()
@@ -124,6 +131,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (currentEnergy > 10)
         {
+            SfxBattleManager.Instance.PunchSFX();
             anim.Play("punch");
             currentEnergy -= 10;
             energyBar.value = currentEnergy;
@@ -133,6 +141,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (currentEnergy > 20)
         {
+            SfxBattleManager.Instance.KickSFX();
             anim.Play("kick");
             currentEnergy -= 20;
             energyBar.value = currentEnergy;
@@ -141,5 +150,19 @@ public class PlayerControl : MonoBehaviour
     public void Defend()
     {
         anim.Play("defend");
+    }
+    public void Hit()
+    {
+        hitAble = false;
+    }
+    public void EndHit()
+    {
+        hitAble = true;
+    }
+    public void GoToMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+        
+    
     }
 }
