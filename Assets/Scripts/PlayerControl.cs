@@ -40,6 +40,7 @@ public class PlayerControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale=1;
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         col = GetComponent<Collider2D>();
@@ -130,6 +131,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (currentEnergy > 10)
         {
+            SfxBattleManager.Instance.PunchSFX();
             anim.Play("punch");
             currentEnergy -= 10;
             energyBar.value = currentEnergy;
@@ -139,6 +141,7 @@ public class PlayerControl : MonoBehaviour
     {
         if (currentEnergy > 20)
         {
+            SfxBattleManager.Instance.KickSFX();
             anim.Play("kick");
             currentEnergy -= 20;
             energyBar.value = currentEnergy;
@@ -159,5 +162,7 @@ public class PlayerControl : MonoBehaviour
     public void GoToMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        
+    
     }
 }

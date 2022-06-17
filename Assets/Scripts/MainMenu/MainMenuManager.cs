@@ -26,11 +26,44 @@ public class MainMenuManager : MonoBehaviour
 
     bool isSoundOn;
     bool isVibrationOn;
-    bool isReverseOn;
+    public bool isReverseOn = false;
+    public static MainMenuManager Instance { get; set; }
     // Start is called before the first frame update
+    private void Awake(){
+        if(Instance == null){
+            Instance = this;
+        }
+        else{
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
+        //ngeluaudio
+        if (AudioManager.Instance.BGM.mute == true)
+        {
 
+            checkBoxSound.SetActive(false);
+            isSoundOn = false;
+        }
+        else
+        {
+            checkBoxSound.SetActive(true);
+            isSoundOn = true;
+        }
+
+        //ngelureverse
+        if (Reversebutton.Instance.reverses == true)
+        {
+            checkBoxReverse.SetActive(true);
+            isReverseOn = true;
+        }
+        else
+        {
+            checkBoxReverse.SetActive(false);
+            isReverseOn = false;
+        }
     }
 
     public void StartButton()
@@ -101,15 +134,15 @@ public class MainMenuManager : MonoBehaviour
 
     public void ReverseButton()
     {
-        if (isReverseOn)
-        {
-            checkBoxReverse.SetActive(false);
-            isReverseOn = false;
-        }
-        else
+        if (!isReverseOn)
         {
             checkBoxReverse.SetActive(true);
             isReverseOn = true;
+        }
+        else
+        {
+            checkBoxReverse.SetActive(false);
+            isReverseOn = false;
         }
     }
 

@@ -13,8 +13,8 @@ EditorBuildSettings:
     guid: e7ce70a3f960ae1429c54adaf806716a
   - enabled: 1
     path: Assets/Scenes/GameNormal.unity
-    guid: 90076215847c37e498f4b17f93ab7217
+    guid: 02d0113f0deb5df4baa5807ffec6d139
   - enabled: 1
     path: Assets/Scenes/GameHard.unity
-    guid: ab6f3bb1b9b36da48a4b2e2b93f0bc99
+    guid: d5f6f52af8043db4cae61d3e33a3089b
   m_configObjects: {}

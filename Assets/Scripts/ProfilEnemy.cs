@@ -71,6 +71,7 @@ public class ProfilEnemy : MonoBehaviour
         {
             if (hit.collider.tag == "Player" && currentEnergy > 20)
             {
+                SfxBattleManager.Instance.PunchSFX();
                 animator.Play(enemy.punch.name);
                 currentEnergy -= 20;
                 energyBar.value = currentEnergy;
